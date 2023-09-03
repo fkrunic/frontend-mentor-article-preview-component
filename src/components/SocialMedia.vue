@@ -2,10 +2,11 @@
 </script>
 
 <template>
-    <!-- Author -->
+
+    <!-- Author variant -->
     <div class="flex flex-row items-center pt-4 justify-between">
 
-        <!-- Avatar Section -->
+        <!-- Avatar -->
         <div class="flex flex-row gap-4 items-center">
             <img class="w-10 h-10 rounded-full" src="../assets/avatar-michelle.jpg" alt="michelle">
             <div class="flex flex-col">
@@ -19,9 +20,36 @@
         </div>
 
         <!-- Share Icon -->
-        <div class="flex items-center justify-center w-8 h-8 rounded-full p-2 bg-grayish-blue/25">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
-                <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+        <div 
+            class="
+                flex 
+                items-center 
+                justify-center 
+                
+                w-8 
+                h-8 
+
+                p-2
+                
+                rounded-full  
+                bg-grayish-blue/25
+
+                group
+                hover:bg-desaturated-dark-blue  
+                hover:cursor-pointer              
+            "
+            >
+            <svg  
+                class="
+                    fill-very-dark-gray-blue/75
+                    
+                    group-hover:fill-white
+                    "            
+                xmlns="http://www.w3.org/2000/svg" 
+                width="15" 
+                height="13"
+                >
+                <path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
             </svg>
         </div>
     </div>
