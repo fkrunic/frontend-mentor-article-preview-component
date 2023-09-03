@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      bodyClass: ''
+      bodyClass: 'font-manrope bg-light-grayish-blue'
     };
   },
   mounted() {
