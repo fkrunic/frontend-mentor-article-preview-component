@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SocialMedia from './components/SocialMedia.vue'
+import InlineSocialMedia from './components/InlineSocialMedia.vue'
 </script>
 
 <template>
@@ -73,7 +73,7 @@ import SocialMedia from './components/SocialMedia.vue'
           felt slightly bare and uninviting. I've got some simple tips to help 
           you make any room feel complete.
         </p>
-        <SocialMedia></SocialMedia>
+        <InlineSocialMedia></InlineSocialMedia>
       </div>
     </div>
   </div>
