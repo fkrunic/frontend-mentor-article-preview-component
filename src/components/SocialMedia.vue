@@ -12,7 +12,17 @@ const handleClick = (): void => {
 <template>
 
     <!-- Author variant -->
-    <div class="flex flex-row items-center pt-4 justify-between">
+    <div class="
+        flex 
+        flex-row 
+        items-center 
+        
+        pt-4 
+        
+        justify-between
+        "
+        :class="showShareMenu ? 'bg-very-dark-gray-blue' : ''"
+        >
 
         <!-- Avatar -->
         <div class="flex flex-row gap-4 items-center">
