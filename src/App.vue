@@ -23,13 +23,13 @@ import SocialMedia from './components/SocialMedia.vue'
       </div>      
 
       <!-- Callout -->
-      <div class="flex flex-col p-8 pb-5 gap-4">
-        <p class="font-bold text-very-dark-gray-blue">
+      <div class="flex flex-col pt-8 gap-4">
+        <p class="px-8 font-bold text-very-dark-gray-blue">
           Shift the overall look and feel by adding these wonderful touches 
           to furniture in your home
         </p>
 
-        <p class="text-xs leading-5 pr-6 text-grayish-blue">
+        <p class="px-8 pr-6 text-xs leading-5 text-grayish-blue">
           Ever been in a room and felt like something was missing? Perhaps it
           felt slightly bare and uninviting. I've got some simple tips to help 
           you make any room feel complete.
