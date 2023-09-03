@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
+const showShareMenu = ref(false)
+
+const handleClick = (): void => {
+    showShareMenu.value = !showShareMenu.value
+}
+
 </script>
 
 <template>
@@ -38,11 +46,11 @@
                 hover:bg-desaturated-dark-blue  
                 hover:cursor-pointer              
             "
+            @click="handleClick"
             >
             <svg  
                 class="
-                    fill-very-dark-gray-blue/75
-                    
+                    fill-very-dark-gray-blue/75                
                     group-hover:fill-white
                     "            
                 xmlns="http://www.w3.org/2000/svg" 
