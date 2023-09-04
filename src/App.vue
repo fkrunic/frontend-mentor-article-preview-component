@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Mobile from './components/mobile/Mobile.vue'
+import Desktop from './components/desktop/Desktop.vue'
 
 const content = {
   callout: 'Shift the overall look and feel by adding these wonderful touches to furniture in your home',
@@ -12,11 +13,8 @@ const content = {
 </script>
 
 <template>
-  <Mobile 
-    class="desktop:hidden"
-    :callout="content.callout" 
-    :body-text="content.bodyText"
-    ></Mobile>
+  <Mobile class="desktop:hidden" :callout="content.callout" :body-text="content.bodyText"></Mobile>
+  <Desktop class="hidden desktop:flex" :callout="content.callout" :body-text="content.bodyText"></Desktop>
 </template>
 
 <script lang="ts">
