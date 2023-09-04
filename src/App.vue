@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import Mobile from './components/mobile/Mobile.vue'
 import Desktop from './components/desktop/Desktop.vue'
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  document.body.className = 'font-manrope bg-light-grayish-blue';
+})
 
 const content = {
   callout: 'Shift the overall look and feel by adding these wonderful touches to furniture in your home',
@@ -16,20 +21,3 @@ const content = {
   <Mobile class="desktop:hidden" :callout="content.callout" :body-text="content.bodyText"></Mobile>
   <Desktop class="hidden desktop:flex" :callout="content.callout" :body-text="content.bodyText"></Desktop>
 </template>
-
-<script lang="ts">
-export default {
-  data() {
-    return {
-      bodyClass: 'font-manrope bg-light-grayish-blue'
-    };
-  },
-  mounted() {
-    document.body.className = this.bodyClass;
-  },
-  beforeDestroy() {
-    // Reset the class when the component is destroyed
-    document.body.className = '';
-  }
-};
-</script>
