@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import ShareIcon from '../common/ShareIcon.vue'
+import Avatar from '../common/Avatar.vue'
 
 const showShareMenu = ref(false)
 
@@ -36,22 +37,7 @@ const handleClick = (): void => {
             </div>
         </div>
 
-        <!-- Avatar -->
-        <div 
-            class="flex flex-row items-center gap-4 mb-4"
-            :class="showShareMenu ? 'hidden': ''"
-            >
-            <img class="w-10 h-10 rounded-full" src="../../assets/avatar-michelle.jpg" alt="michelle">
-            <div class="flex flex-col gap-1">
-                <p class="font-bold text-xs text-very-dark-gray-blue">
-                    Michelle Appleton
-                </p>
-                <p class="text-xs text-grayish-blue">
-                    28 Jun 2020
-                </p>
-            </div>
-        </div>
-
+        <Avatar :class="showShareMenu ? 'hidden': ''"></Avatar>
         <ShareIcon @click="handleClick"></ShareIcon>
     </div>
 </template>
