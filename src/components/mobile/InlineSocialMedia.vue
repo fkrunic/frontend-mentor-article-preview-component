@@ -59,9 +59,3 @@ const handleClick = (): void => {
     
     </div>
 </template>
-
-<style scoped>
-* {
-    box-sizing: border-box;
-}
-</style>
