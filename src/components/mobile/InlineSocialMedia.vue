@@ -52,10 +52,7 @@ const handleClick = (): void => {
             </div>
         </div>
 
-        <!-- Icon Container -->
-        <div class="">
-            <ShareIcon @clicked="handleClick"></ShareIcon>
-        </div>
+        <ShareIcon @clicked="handleClick"></ShareIcon>
     
     </div>
 </template>
