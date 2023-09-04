@@ -19,8 +19,7 @@
         group
         hover:bg-desaturated-dark-blue  
         hover:cursor-pointer              
-        " 
-        @click="$emit('clicked')">
+        " >
         <svg class="fill-very-dark-gray-blue/75 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="15"
             height="13">
             <path

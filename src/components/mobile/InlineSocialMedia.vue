@@ -52,7 +52,6 @@ const handleClick = (): void => {
             </div>
         </div>
 
-        <ShareIcon @clicked="handleClick"></ShareIcon>
-    
+        <ShareIcon @click="handleClick"></ShareIcon>
     </div>
 </template>
