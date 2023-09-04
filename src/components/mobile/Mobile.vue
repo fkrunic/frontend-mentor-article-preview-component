@@ -19,17 +19,7 @@ const handleClick = (): void => {
                 <p class="px-8 font-bold text-very-dark-gray-blue">{{ callout }}</p>
                 <p class="px-8 pr-6 text-xs leading-5 text-grayish-blue">{{ bodyText }}</p>
 
-                <div class="
-                    flex 
-                    flex-row 
-                    items-center 
-                    justify-between 
-
-                    h-16
-                    p-8
-                    
-                    rounded-b-xl
-                    "
+                <div class="flex flex-row items-center justify-between h-16 p-8 rounded-b-xl"
                     :class="showShareMenu ? 'bg-very-dark-gray-blue' : ''"
                     >
 
